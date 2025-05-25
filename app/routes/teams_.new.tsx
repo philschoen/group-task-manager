@@ -86,7 +86,7 @@ export default function NewTeamPage() {
       <h1 className="text-2xl font-bold mb-6">Create New Team</h1>
       
       <Form method="post" className="space-y-4">
-        {/* Team name and description fields (same as before) */}
+        {/* Team name and description fields */}
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-1">
             Team Name *

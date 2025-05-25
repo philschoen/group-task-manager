@@ -62,13 +62,6 @@ export async function action({ params, request }: ActionFunctionArgs) {
     return redirect("/tasks");
   }
 
-  if (intent === "addComment") {
-    const content = formData.get("content")?.toString();
-    if (!content) return null;
-    // Add comment logic here if needed
-    return redirect(`/tasks/${params.taskId}`);
-  }
-
   return null;
 }
 

@@ -27,7 +27,6 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
 };
 
 
-// app/routes/teams/index.tsx
 export default function TeamsPage() {
   const teams = useLoaderData<typeof loader>();
   return (
