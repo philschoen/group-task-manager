@@ -22,7 +22,7 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
     return teams;
   } catch (error) {
     console.error("Database not accessible:", error);
-    return [];
+    throw new Response("Database not accessible", { status: 500 });
   }
 };
 
